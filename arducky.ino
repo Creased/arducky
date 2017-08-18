@@ -18,7 +18,7 @@
 /**
  * Variables
  **/
-#define KEY_MENU          0xFE
+#define KEY_MENU          0xED
 #define KEY_PAUSE         0xD0
 #define KEY_NUMLOCK       0xDB
 #define KEY_PRINTSCREEN   0xCE
