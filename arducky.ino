@@ -24,6 +24,7 @@
 #define KEY_PRINTSCREEN   0xCE
 #define KEY_SCROLLLOCK    0xCF
 #define KEY_SPACE         0xB4
+#define KEY_BACKSPACE     0xB2
 
 File myFile;                               // File data buffer
 char *fileName = (char*)"script.txt";      // File containing payload placed on SD Card
@@ -233,7 +234,7 @@ void processCommand(String command) {
         Keyboard.press(KEY_PAUSE);
     } else if (command == "CAPSLOCK") {
         Keyboard.press(KEY_CAPS_LOCK);
-    } else if (command == "DELETE") {
+    } else if (command == "DELETE" || command == "DEL") {
         Keyboard.press(KEY_DELETE);
     } else if (command == "END") {
         Keyboard.press(KEY_END);
@@ -255,6 +256,8 @@ void processCommand(String command) {
         Keyboard.press(KEY_SCROLLLOCK);
     } else if (command == "SPACE") {
         Keyboard.press(KEY_SPACE);
+    } else if (command == "BACKSPACE") {
+        Keyboard.press(KEY_BACKSPACE);
     } else if (command == "TAB") {
         Keyboard.press(KEY_TAB);
     } else if (command == "GUI" || command == "WINDOWS") {
