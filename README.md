@@ -102,7 +102,7 @@ Voilà!
  [arducky_bottom]: illustrations/arducky_bottom.jpg
  [arducky_front]: illustrations/arducky_front.jpg
  [arducky_left]: illustrations/arducky_left.jpg
- [arducky_pinout]: illustrations/arducky_pinout.svg
+ [arducky_pinout]: illustrations/arducky_pinout.png
  [arducky_right]: illustrations/arducky_right.jpg
  [arducky_top]: illustrations/arducky_top.jpg
  [arducky_workbench]: illustrations/arducky_workbench.jpg
