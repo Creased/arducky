@@ -57,7 +57,30 @@ cd arducky/
 
 ```
 
+If you're using an AZERTY keyboard, you'll also need to replace your Keyboard library (Keyboard.cpp and Keyboard.h) with [the included one](lib).
+
 Upload the [arducky.ino](arducky.ino) sketch to your Arduino board using the [Arduino IDE](https://www.arduino.cc/en/Guide/Environment#toc9).
+
+### Femtoduino ###
+
+To generate the [arducky_femto.ino](arducky_femto.ino) file with a [Ducky Script](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript) payload, you can use [generate_payload_femto.py](generate_payload_femto.py).
+
+```
+~# python3 femto_generate_ino_with_payload.py -h
+usage: femto_generate_ino_with_payload.py [-h] [--ino ino_file]
+                                          [-o output_file]
+                                          payload_file
+
+Generates payload in arducky_femto.ino from a Rubber Ducky payload file
+
+positional arguments:
+  payload_file    Input Rubber Ducky payload file
+
+optional arguments:
+  -h, --help      show this help message and exit
+  --ino ino_file  Input arducky ino file
+  -o output_file  Output arducky ino file
+```
 
 ## The Empire strikes back with Arducky (demo) ##
 
