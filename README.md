@@ -63,23 +63,32 @@ Upload the [arducky.ino](arducky.ino) sketch to your Arduino board using the [Ar
 
 ### Femtoduino ###
 
-To generate the [arducky_femto.ino](arducky_femto.ino) file with a [Ducky Script](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript) payload, you can use [generate_payload_femto.py](generate_payload_femto.py).
+To generate the [arducky_femto.ino](arducky_femto.ino) file with a [Ducky Script](https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript) payload, you can use [femto_generate_payload.py](femto_generate_payload.py):
 
-```
-~# python3 femto_generate_ino_with_payload.py -h
-usage: femto_generate_ino_with_payload.py [-h] [--ino ino_file]
-                                          [-o output_file]
+```bash
+~# python3 femto_generate_payload.py -h
+usage: femto_generate_payload.py [-h] [-i ino_file] [-o output_file]
                                           payload_file
 
-Generates payload in arducky_femto.ino from a Rubber Ducky payload file
+Generates payload in arducky_femto.ino from an input Rubber Ducky payload file
 
 positional arguments:
-  payload_file    Input Rubber Ducky payload file
+  payload_file          input Rubber Ducky payload file
 
 optional arguments:
-  -h, --help      show this help message and exit
-  --ino ino_file  Input arducky ino file
-  -o output_file  Output arducky ino file
+  -h, --help            show this help message and exit
+  -i ino_file, --ino ino_file
+                        input Arducky ino file
+  -o output_file, --out output_file
+                        output Arducky ino file
+
+```
+
+Example:
+
+```bash
+~# python3 femto_generate_payload.py -i arducky_femto.ino -o femto.ino demo/script.txt
+
 ```
 
 ## The Empire strikes back with Arducky (demo) ##
