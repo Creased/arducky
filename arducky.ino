@@ -121,6 +121,7 @@ void processLine(String line) {
      *  - SPACE
      *  - TAB
      *  - REPLAY (global commands aren't implemented)
+     *  - F1 ... F12 
      *
      * (2) Commands with payload:
      *  - DEFAULT_DELAY <=> DEFAULTDELAY (global commands aren't implemented.)
@@ -159,7 +160,20 @@ void processLine(String line) {
             line == "PRINTSCREEN" ||
             line == "SCROLLLOCK" ||
             line == "SPACE" ||
-            line == "TAB"
+            line == "TAB" ||
+            line == "F1" || 
+            line == "F2" || 
+            line == "F3" || 
+            line == "F4" || 
+            line == "F5" || 
+            line == "F6" || 
+            line == "F7" || 
+            line == "F8" || 
+            line == "F9" || 
+            line == "F10" || 
+            line == "F11" || 
+            line == "F12"  
+ 
         ) {
             command = line;
         }
